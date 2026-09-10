@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Vikash Thakur" />
+  <meta name="description" content="Vikash Thakur | Backend Developer & AI & Data Science Student | Portfolio Website" />
+  <meta name="keywords" content="Backend Developer, AI, Data Science, Python, Flask, Django, Java, Spring Boot" />
+  <title>Vikash Thakur | Backend Developer & AI & Data Science</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-theme">
+
+  <!-- Animated Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading Portfolio…</span>
+    </div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Vikash Thakur</a>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="hero-title">
+        Hi, I’m <span class="text-glow">Vikash Thakur</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span id="typed-text"></span>
+      </p>
+      <p class="hero-desc">
+        Backend Developer & AI & Data Science Enthusiast passionate about building scalable, secure backend systems and exploring modern web technologies.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="#about" class="btn btn-outline btn-sm">View Resume</a>
+      </div>
+    </div>
+    <div class="hero-image" data-aos="zoom-in">
+      <img src="assets/profile.jpg" alt="Vikash Thakur" class="hero-img" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p>
+            I’m a motivated Backend Developer and AI & Data Science student with strong skills in Python, Java, Flask, Django, Spring Boot, SQL, REST APIs, and Git / GitHub. 
+            I’m passionate about building scalable backend systems and applying modern web technologies to solve real‑world problems.
+          </p>
+          <div class="about-info">
+            <p><strong>Name:</strong> Vikash Thakur</p>
+            <p><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
+            <p><strong>Email:</strong> <a href="mailto:vikasvivek2006@gmail.com">vikasvivek2006@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 6261212634</p>
+            <p><strong>Education:</strong> B.Tech in Artificial Intelligence and Data Science at Sagar Institute of Science and Technology (SISTec), Bhopal</p>
+          </div>
+        </div>
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-item">
+            <span class="stat-number" id="projectsCount">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="certificationsCount">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="experienceYears">0</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <div class="skills-grid" data-aos="fade-up">
+        <!-- Skill categories -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Programming Languages</h3>
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-progress python"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar"><div class="skill-progress java"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">C</span>
+            <div class="skill-bar"><div class="skill-progress c"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">C++</span>
+            <div class="skill-bar"><div class="skill-progress cpp"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Backend Frameworks</h3>
+          <div class="skill-item">
+            <span class="skill-name">Flask</span>
+            <div class="skill-bar"><div class="skill-progress flask"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Django</span>
+            <div class="skill-bar"><div class="skill-progress django"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Spring Boot</span>
+            <div class="skill-bar"><div class="skill-progress spring"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Databases</h3>
+          <div class="skill-item">
+            <span class="skill-name">SQL</span>
+            <div class="skill-bar"><div class="skill-progress sql"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MySQL</span>
+            <div class="skill-bar"><div class="skill-progress mysql"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Web Technologies</h3>
+          <div class="skill-item">
+            <span class="skill-name">HTML</span>
+            <div class="skill-bar"><div class="skill-progress html"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">CSS</span>
+            <div class="skill-bar"><div class="skill-progress css"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-progress js"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Libraries & Tools</h3>
+          <div class="skill-item">
+            <span class="skill-name">NumPy</span>
+            <div class="skill-bar"><div class="skill-progress numpy"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Pandas</span>
+            <div class="skill-bar"><div class="skill-progress pandas"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git / GitHub</span>
+            <div class="skill-bar"><div class="skill-progress git"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up">
+          <h3>Core Concepts</h3>
+          <div class="skill-item">
+            <span class="skill-name">Data Structures & Algorithms</span>
+            <div class="skill-bar"><div class="skill-progress dsa"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">REST APIs</span>
+            <div class="skill-bar"><div class="skill-progress rest"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">OOP</span>
+            <div class="skill-bar"><div class="skill-progress oop"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Leadership & Experience</h2>
+      <div class="timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Vice Chair — IEEE Student Branch</h3>
+            <span class="timeline-year">Sagar Institute of Science and Technology, Bhopal</span>
+            <p>Led technical events, coordinated student activities, and promoted AI & data‑related initiatives.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Discipline Committee Member — SAC</h3>
+            <span class="timeline-year">Student Activity Cell</span>
+            <p>Helped manage student conduct and organized campus‑wide events.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Student Coordinator — National Level Hackathon “Samadhan”</h3>
+            <span class="timeline-year">SISTec, Bhopal</span>
+            <p>Coordinated logistics, participant registration, and technical support for the hackathon.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Event Coordinator — College Fest “Ninad”</h3>
+            <span class="timeline-year">SISTec, Bhopal</span>
+            <p>Managed event planning, vendor coordination, and on‑campus execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
+      <div class="projects-grid" data-aos="fade-up">
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-image-container">
+            <img src="assets/project-task.jpg" alt="Student Task Manager REST API" />
+          </div>
+          <div class="project-content">
+            <h3>Student Task Manager REST API</h3>
+            <p>
+              A REST‑based backend API for managing student tasks with full CRUD operations, modular Flask blueprints, relational database schema, JSON responses, and input validation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">REST API</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/yourusername/task-manager" class="btn btn-sm btn-outline" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" disabled>
+                <i class="fas fa-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards later -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+      <div class="certs-slider" data-aos="fade-up">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <h4>AI Awareness Certificate</h4>
+          <p>Foundational AI concepts and awareness.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <h4>AI Power Certificate</h4>
+          <p>Intermediate AI skills and problem‑solving.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <h4>Google Cloud</h4>
+          <p>Cloud computing fundamentals.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-comments"></i></div>
+          <h4>Apply AI: Analyze Customer Reviews</h4>
+          <p>Practical AI‑based sentiment analysis.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <h4>C Essentials 1 & 2</h4>
+          <p>C programming foundation.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+          <h4>Basics of Data Structures and Algorithms</h4>
+          <p>Core programming concepts.</p>
+        </div>
+        <!-- Add more certification cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+      <div class="contact-form-container" data-aos="fade-up">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell me about your project or question..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-spinner">
+              <i class="fas fa-spinner fa-spin"></i>
+            </span>
+          </button>
+        </form>
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:vikasvivek2006@gmail.com">vikasvivek2006@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> +91 6261212634</p>
+          <p><i class="fas fa-map-marker-alt"></i> Bhopal, Madhya Pradesh, India</p>
+          <div class="social-links">
+            <a href="https://github.com/VikashThakur62" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vikash-thakur-dev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">Vikash Thakur</a>
+          <p>Backend Developer & AI & Data Science Enthusiast</p>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/VikashThakur62" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vikash-thakur-dev/" ><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vikash Thakur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: "ease-out-back" });
+  </script>
+</body>
+</html>
